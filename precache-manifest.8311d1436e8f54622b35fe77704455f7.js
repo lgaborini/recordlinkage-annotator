@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b48ad3a5f4a742792b1d69ffd0d59c2b",
+    "revision": "d8ed611073491599d5b7cff80dc3c05b",
     "url": "/recordlinkage-annotator/index.html"
   },
   {
-    "revision": "8fa3a7c81a2d5f686288",
-    "url": "/recordlinkage-annotator/static/css/2.1db10f6a.chunk.css"
+    "revision": "0c164bf6362a2a99faa5",
+    "url": "/recordlinkage-annotator/static/css/2.45875ee8.chunk.css"
   },
   {
-    "revision": "06a324018d843c56ae6c",
-    "url": "/recordlinkage-annotator/static/css/main.b100e6da.chunk.css"
+    "revision": "7a79aaf3f9c82dd4db6d",
+    "url": "/recordlinkage-annotator/static/css/main.5e4e9510.chunk.css"
   },
   {
-    "revision": "8fa3a7c81a2d5f686288",
-    "url": "/recordlinkage-annotator/static/js/2.e62fb3bd.chunk.js"
+    "revision": "0c164bf6362a2a99faa5",
+    "url": "/recordlinkage-annotator/static/js/2.33d59a91.chunk.js"
   },
   {
-    "revision": "06a324018d843c56ae6c",
-    "url": "/recordlinkage-annotator/static/js/main.674707c1.chunk.js"
+    "revision": "7a79aaf3f9c82dd4db6d",
+    "url": "/recordlinkage-annotator/static/js/main.dd4edf21.chunk.js"
   },
   {
-    "revision": "3206d39e1f33961de865",
-    "url": "/recordlinkage-annotator/static/js/runtime-main.4fa13630.js"
+    "revision": "dd90e4c2a0a8aa565c02",
+    "url": "/recordlinkage-annotator/static/js/runtime-main.5f3ab75d.js"
   },
   {
     "revision": "5cb7edfceb233100075dc9a1e12e8da3",
