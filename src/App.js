@@ -114,11 +114,11 @@ export default function App() {
               </Typography>
 
               <Grid container spacing={3} direction="row" justify="space-between" alignItems="center">
-                  <Grid item xs={6}>
-                    <ExportData reviewData={appData} />
-                  </Grid>
-                  <Grid item xs={6}>
+                  <Grid item>
                     <Button variant="contained" color="default" onClick={() => reviewState("review")}>Go back</Button>
+                  </Grid>
+                  <Grid item>
+                    <ExportData reviewData={appData} />
                   </Grid>
                 </Grid>
 
