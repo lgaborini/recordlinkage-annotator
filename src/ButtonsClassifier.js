@@ -10,15 +10,17 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
 import SaveAltIcon from '@material-ui/icons/SaveAlt';
+import FindInPage from '@material-ui/icons/FindInPage';
 
 const useStyles = makeStyles(theme => ({
   button: {
     margin: theme.spacing(1),
   },
   buttonNav: {
-    margin: theme.spacing(1),
+    margin: theme.spacing(0),
   },
   center: {
+    textAlign: "center"
   },
 }));
 
@@ -53,10 +55,13 @@ export default function ButtonsClassifier(props) {
       <IconButton color="default" variant="outlined" className={classes.buttonNav} onClick={() => handleAction("next")}>
         <ArrowForwardIcon />
       </IconButton>
+      <IconButton variant="contained" color="default" className={classes.buttonNav} onClick={() => handleAction("goToFirstUnmatched")}>
+        <FindInPage />
+      </IconButton>
       <IconButton color="default" variant="outlined" className={classes.buttonNav} onClick={() => handleAction("last")}>
         <SkipNextIcon />
       </IconButton>
-      <IconButton color="default" variant="outlined" className={classes.buttonNav} onClick={() => handleAction("save")}>
+      <IconButton color="default" variant="outlined" className={classes.buttonNav} style={{float: "right"}} onClick={() => handleAction("save")}>
         <SaveAltIcon />
       </IconButton>
 

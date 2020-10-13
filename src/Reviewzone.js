@@ -118,6 +118,17 @@ export default function ReviewZone(props) {
     nextOrSave();
   };
 
+  const goToFirstUnmatched = () => {
+    console.log("Seeking first unmatched pair.")
+    let idxUnmatched = appData['pairs'].findIndex(item => item.label !== 0 && item.label !== 1);
+    if (idxUnmatched === -1) {
+      toast.success("No more unmatched pairs!");
+    } else {
+      toast("Going to first unmatched pair");
+      setPairIndex(idxUnmatched);
+    }
+  }
+
   const navigateTo = (direction) => {
     // console.log(`Navigation event! ${direction}`);
     switch (direction) {
@@ -154,7 +165,7 @@ export default function ReviewZone(props) {
       case "last":
         setPairIndex(appData['pairs'].length - 1);
         toast("Last record pair");
-        break;
+        break;      
       default:
         throw new Error("unknown direction in navigateTo");
     }
@@ -173,7 +184,8 @@ export default function ReviewZone(props) {
     "nextLoop": () => navigateTo("nextLoop"),
     "last": () => navigateTo("last"),
     "skip": skipRecord,
-    "save": saveJSON
+    "save": saveJSON,
+    "goToFirstUnmatched": goToFirstUnmatched
   };
 
 
@@ -191,7 +203,8 @@ export default function ReviewZone(props) {
       "ArrowUp": "first",
       "ArrowDown": "last",
       "ArrowLeft": "previousLoop",
-      "s": "save"
+      "s": "save",
+      "m": "goToFirstUnmatched"
     };
 
     if (dictKeys.hasOwnProperty(e.key) && dictActions.hasOwnProperty(dictKeys[e.key])) {
