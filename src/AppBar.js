@@ -43,13 +43,13 @@ export default function ButtonAppBar(props) {
           </Typography>
 
           {
-          props.reviewState === "review" &&
-            <ExportData reviewData={props.reviewData}/>
-      	}
+            props.reviewState === "review" &&
+              <ExportData reviewData={props.reviewData}/>
+      	  }
 
-        <IconButton color="default" onClick={props.onToggleDark}>
-          <Brightness4Icon/>
-        </IconButton>
+          <IconButton color="default" onClick={props.onToggleDark}>
+            <Brightness4Icon/>
+          </IconButton>
 
         </Toolbar>
 

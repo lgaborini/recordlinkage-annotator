@@ -3,7 +3,10 @@ import 'typeface-roboto';
 
 import './App.css';
 
-import ReviewDropzone from './Dropzone.js' 
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
+
+import ReviewDropzone from './Dropzone.js'
 import ReviewZone from './Reviewzone.js'
 import ButtonAppBar from './AppBar.js'
 import ExportData from './ExportData.js'
@@ -12,7 +15,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
-import {createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import blueGrey from '@material-ui/core/colors/blueGrey';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
@@ -110,7 +113,14 @@ export default function App() {
                 You finished the annotation. You can now export the data and save it for further analysis. 
               </Typography>
 
-              <ExportData reviewData={appData}/>
+                <Grid container spacing={3}>
+                  <Grid item xs={6}>
+                    <ExportData reviewData={appData} />
+                  </Grid>
+                  <Grid item xs={6}>
+                    <Button variant="contained" color="default" onClick={() => reviewState("review")}>Go back</Button>
+                  </Grid>
+                </Grid>
 
             </React.Fragment>
           }
