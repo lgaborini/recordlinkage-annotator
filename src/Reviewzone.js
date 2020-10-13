@@ -172,7 +172,8 @@ export default function ReviewZone(props) {
     "next": () => navigateTo("next"),
     "nextLoop": () => navigateTo("nextLoop"),
     "last": () => navigateTo("last"),
-    "skip": skipRecord
+    "skip": skipRecord,
+    "save": saveJSON
   };
 
 
@@ -201,6 +202,7 @@ export default function ReviewZone(props) {
     }
   };
 
+  // Map a JSON label (0 = distinct, 1 = match, other or undefined = unknown) to human properties
   const getLabelDisplayProperties = (label) => {
     switch (label) {
       case 0:
@@ -233,7 +235,7 @@ export default function ReviewZone(props) {
         </Grid>
 
 
-        {/* Current value*/}
+        {/* Current value */}
         <Grid item xs={12} sm={12}>
           <Typography color="textPrimary" className={classes.statusText}>
             This pair is
