@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/recordlinkage-annotator/precache-manifest.8311d1436e8f54622b35fe77704455f7.js"
+  "/recordlinkage-annotator/precache-manifest.32c10f0ce00bbadc567eb1a6988ea037.js"
 );
 
 self.addEventListener('message', (event) => {

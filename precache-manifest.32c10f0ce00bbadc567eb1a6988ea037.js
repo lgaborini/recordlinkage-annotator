@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d8ed611073491599d5b7cff80dc3c05b",
+    "revision": "acb0dc0ce211b976029ea45d93f805eb",
     "url": "/recordlinkage-annotator/index.html"
   },
   {
-    "revision": "0c164bf6362a2a99faa5",
+    "revision": "b47d80a67924d9484c84",
     "url": "/recordlinkage-annotator/static/css/2.45875ee8.chunk.css"
   },
   {
-    "revision": "7a79aaf3f9c82dd4db6d",
+    "revision": "3bfaf0e888b8d92aec8d",
     "url": "/recordlinkage-annotator/static/css/main.5e4e9510.chunk.css"
   },
   {
-    "revision": "0c164bf6362a2a99faa5",
-    "url": "/recordlinkage-annotator/static/js/2.33d59a91.chunk.js"
+    "revision": "b47d80a67924d9484c84",
+    "url": "/recordlinkage-annotator/static/js/2.55fa5381.chunk.js"
   },
   {
-    "revision": "7a79aaf3f9c82dd4db6d",
-    "url": "/recordlinkage-annotator/static/js/main.dd4edf21.chunk.js"
+    "revision": "3bfaf0e888b8d92aec8d",
+    "url": "/recordlinkage-annotator/static/js/main.1884e7ae.chunk.js"
   },
   {
     "revision": "dd90e4c2a0a8aa565c02",
