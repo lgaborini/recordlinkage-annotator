@@ -81,39 +81,39 @@ export default function App() {
   return (
     <React.Fragment>
       <ThemeProvider theme={muiTheme}>
-        <ButtonAppBar reviewState={isState} onToggleDark={toggleDarkTheme} reviewData={appData}/>
-      <CssBaseline />
-      <Container maxWidth="md" fixed>
+        <ButtonAppBar reviewState={isState} onToggleDark={toggleDarkTheme} reviewData={appData} />
+        <CssBaseline />
+        <Container maxWidth="md" fixed>
 
 
-        <Typography component="div" style={{ paddingTop: '50px' }}>
+          <Typography component="div" style={{ paddingTop: '50px' }}>
 
-          {isState === 'upload' &&
-            <React.Fragment>
-              <Typography component="h2" variant="h3" align="center" color="textPrimary" gutterBottom>
-                Record pair labeling for record linkage and data matching
+            {isState === 'upload' &&
+              <React.Fragment>
+                <Typography component="h2" variant="h3" align="center" color="textPrimary" gutterBottom>
+                  Record pair labeling for record linkage and data matching
               </Typography>
-              <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                Turn your record pairs into golden record pairs with this intuitive labeling tool. Labeled record pairs are important for training and validation record linkage and data matching processes. <Link href="https://github.com/J535D165/recordlinkage-annotator#create-annotation-file" target="_blank">Create an annotation file</Link> and start labeling your data!
+                <Typography variant="h5" align="center" color="textSecondary" paragraph>
+                  Turn your record pairs into golden record pairs with this intuitive labeling tool. Labeled record pairs are important for training and validation record linkage and data matching processes. <Link href="https://github.com/J535D165/recordlinkage-annotator#create-annotation-file" target="_blank">Create an annotation file</Link> and start labeling your data!
               </Typography>
-            <ReviewDropzone reviewData={reviewData} reviewState={reviewState}/>
-            </React.Fragment>
-          }
+                <ReviewDropzone reviewData={reviewData} reviewState={reviewState} />
+              </React.Fragment>
+            }
 
-          { isState === 'review' && 
-            <ReviewZone reviewState={reviewState} reviewData={appData}/>
-          }
+            {isState === 'review' &&
+              <ReviewZone reviewState={reviewState} reviewData={appData} />
+            }
 
-          {isState === 'export' &&
-            <React.Fragment>
-              <Typography component="h2" variant="h3" align="center" color="textPrimary" gutterBottom>
-                Done!
+            {isState === 'export' &&
+              <React.Fragment>
+                <Typography component="h2" variant="h3" align="center" color="textPrimary" gutterBottom>
+                  Done!
               </Typography>
-              <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                You finished the annotation. You can now export the data and save it for further analysis. 
+                <Typography variant="h5" align="center" color="textSecondary" paragraph>
+                  You finished the annotation. You can now export the data and save it for further analysis.
               </Typography>
 
-                <Grid container spacing={3}>
+              <Grid container spacing={3} direction="row" justify="space-between" alignItems="center">
                   <Grid item xs={6}>
                     <ExportData reviewData={appData} />
                   </Grid>
@@ -122,23 +122,23 @@ export default function App() {
                   </Grid>
                 </Grid>
 
-            </React.Fragment>
-          }
+              </React.Fragment>
+            }
 
-        </Typography>
-        <ToastContainer
-          position="bottom-right"
-          autoClose={1000}
-          hideProgressBar
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          transition={toastTransitionCustom}
-        />
-      </Container>
+          </Typography>
+          <ToastContainer
+            position="bottom-right"
+            autoClose={1000}
+            hideProgressBar
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            transition={toastTransitionCustom}
+          />
+        </Container>
       </ThemeProvider>
     </React.Fragment>
   );
